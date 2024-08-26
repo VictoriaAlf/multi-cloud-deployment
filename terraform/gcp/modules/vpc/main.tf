@@ -31,7 +31,6 @@ resource "google_compute_router" "nat_router" {
   region  = var.region
 }
 
-# Configurar Cloud NAT usando el Cloud Router
 resource "google_compute_router_nat" "nat_gateway" {
   count = var.enable_nat_gateway ? 1 : 0
   name                                 = "${var.vpc_name}-nat-gateway"
