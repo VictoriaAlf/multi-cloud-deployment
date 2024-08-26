@@ -39,24 +39,20 @@ Before deploying infrastructure, ensure you are authenticated with each cloud pr
 
     AWS: Configure your AWS credentials using aws configure or authenticate via SSO or another method.
 
-    ```bash
-
+   
+ ```bash
 aws configure
-
 ```
 
 Azure: Login using the Azure CLI:
 
 ```bash
-
 az login
-
 ```
 
 GCP: Authenticate using the Google Cloud SDK:
 
 ```bash
-
 gcloud auth login
 gcloud config set project [PROJECT_ID]
 ```
